@@ -58,13 +58,22 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header-contacts-list">
+            <li class="header-contacts-item">
               <a class="header-conacts-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="button-menu-svg" width="32" height="22">
+            <use href="./images/icon.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main section -->
@@ -141,6 +150,10 @@
           <ul class="action-list list">
             <li class="action-item">
               <img
+                srcset="
+                  ./images/action/img-1.jpg     1x,
+                  ./images/action/img-1_@2x.jpg 2x
+                "
                 src="./images/action/img-1.jpg"
                 alt="James Oliver website content on the monitor"
                 width="360"
@@ -149,6 +162,10 @@
             </li>
             <li class="action-item">
               <img
+                srcset="
+                  ./images/action/img-2.jpg     1x,
+                  ./images/action/img-2_@2x.jpg 2x
+                "
                 src="./images/action/img-2.jpg"
                 alt="mobile phone is used for communication"
                 width="360"
@@ -157,6 +174,10 @@
             </li>
             <li class="action-item">
               <img
+                srcset="
+                  ./images/action/img-3.jpg     1x,
+                  ./images/action/img-3_@2x.jpg 2x
+                "
                 src="./images/action/img-3.jpg"
                 alt="View recommendations of the most inspiring places using your mobile phone"
                 width="360"
@@ -167,12 +188,17 @@
         </div>
       </section>
       <!-- Our team section -->
+      -->
       <section class="team section">
         <div class="container">
           <h2 class="team-title title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/img-mark.jpg     1x,
+                  ./images/our-team/img-mark_@2x.jpg 2x
+                "
                 src="./images/our-team/img-mark.jpg"
                 alt="A man with a short haircut and a beard"
                 width="264"
@@ -239,6 +265,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/img-tom.jpg     1x,
+                  ./images/our-team/img-tom_@2x.jpg 2x
+                "
                 src="./images/our-team/img-tom.jpg"
                 alt="Smiling guy"
                 width="264"
@@ -305,6 +335,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/img-camila.jpg     1x,
+                  ./images/our-team/img-camila_@2x.jpg 2x
+                "
                 src="./images/our-team/img-camila.jpg"
                 alt="A girl with long dark hair"
                 width="264"
@@ -371,6 +405,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team/img-daniel.jpg     1x,
+                  ./images/our-team/img-daniel_@2x.jpg 2x
+                "
                 src="./images/our-team/img-daniel.jpg"
                 alt="A guy in a gray T-shirt"
                 width="264"
@@ -581,12 +619,13 @@
         </div>
       </div>
     </footer>
+    -->
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-svg" width="8" height="8">
-            <use href="./images/icon.svg#modal-button"></use>
+            <use href="./images/icon.svg#modal-butto"></use>
           </svg>
         </button>
         <form class="modal-form">
@@ -644,6 +683,101 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="button-menu-close" width="8" height="8">
+          <use href="./images/icon.svg#modal-butto"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link current link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-list list">
+          <a
+            class="mobile-contacts-link-mail link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-networks-list list">
+        <li class="mobile-network-item">
+          <a
+            class="mobile-network-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram icon"
+          >
+            <svg class="mobile-icon-network" width="24" height="24">
+              <use href="./images/icon.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-network-item">
+          <a
+            class="mobile-network-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter icon"
+          >
+            <svg class="mobile-icon-network" width="24" height="24">
+              <use href="./images/icon.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-network-item">
+          <a
+            class="mobile-network-link link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook icon"
+          >
+            <svg class="mobile-icon-network" width="24" height="24">
+              <use href="./images/icon.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-network-item">
+          <a
+            class="mobile-network-link link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin icon"
+          >
+            <svg class="mobile-icon-network" width="24" height="24">
+              <use href="./images/icon.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
